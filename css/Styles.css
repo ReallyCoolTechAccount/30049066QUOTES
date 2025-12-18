@@ -1,0 +1,71 @@
+/* Creating a website using txternal styling - Styles.css */
+/* USE DOWN TO LINE 22 FOR THE index.html page */
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue
+    }
+}
+
+body{
+    border: 5px solid black;
+    padding: 5px;
+}
+
+ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+
+li{
+    display:inline;
+}
+
+/* ------------------------------------------------------------------*/
+/* ADD THE REST OF THIS CODE UPON SUCCESSFUL COMPLETION OF GETTING THE TOP CODE TO WORK FOR index.html.
+CREATE THE index2.html page FOR USE WITH THE CODE BELOW */
+
+.header{
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.nav{
+    text-align: centre;
+    border:1px solid black;
+    padding: 5px;
+}
+
+.maincontent{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.footer{
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+/*This code eables some of the DIVs to sit side by side */
+.columLeft {
+    float: left;
+    width: 25%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.ColumRight {
+    float: left;
+    width: 70%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* This code clears the floats after the colums have been drawn*/
+.maincontent:after {
+    content: "";
+    display: table;
+    clear: both;
+}
